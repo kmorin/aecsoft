@@ -1,10 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Data Title from GQL`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `AECsoft`,
+    description: `Thinkers, Builders, Investors in the future of tech in Architecture, Engineering and Construction.`,
     author: `@kylemorin`,
   },
   plugins: [
+    `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -26,6 +27,23 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
+    },
+    {
+      resolve: 'gatsby-remark-emojis',
+      options:{
+        active: true,
+        class: 'emoji-icon',
+        escapeCharacter: '#',
+        size: 64,
+        styles: {
+          display: 'inline',
+          margin: '0',
+          'margin-top': '1px',
+          position: 'relative',
+          top: '5px',
+          width: '25px'
+        }
+      }
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

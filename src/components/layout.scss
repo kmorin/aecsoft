@@ -1,3 +1,16 @@
+$moss-green: #94a048ff;
+$silver-sand: #c4c9d2ff;
+$dark-moss-green: #3d5419ff;
+$blue-yonder: #546e97ff;
+$xiketic: #141521ff;
+
+// option2
+$ming: #006d77ff;
+$middle-blue-green: #83c5beff;
+$alice-blue: #edf6f9ff;
+$unbleached-silk: #ffddd2ff;
+$dark-salmon: #e29578ff;
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -7,15 +20,34 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: $xiketic;
+  width: 100%;
+}
+header{
+  background: $middle-blue-green;
+  margin-bottom: 1.45rem;
+  color: $alice-blue;
 }
 article,
 aside,
 details,
 figcaption,
 figure,
-footer,
-header,
-main,
+footer{
+  background: $ming;
+  color: $alice-blue;
+  min-height: 20vh;
+  flex-grow: 1;
+  margin: 0 auto;
+}
+#footerContent{
+  margin: auto;
+  max-width: 960px;
+}
+main{
+  min-height: 70vh;
+  flex-direction: column;
+}
 menu,
 nav,
 section,
